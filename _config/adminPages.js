@@ -1,0 +1,32 @@
+export default {
+  notebooks: {
+    permission: 'icontact.notebooks.manage',
+    activated: true,
+    authenticated: true,
+    path: '/contact/notebooks/index',
+    name: 'qcontact.admin.notebooks',
+    crud: import('modules/qcontact/_crud/notebooks'),
+    page: () => import('modules/qcrud/_pages/admin/crudPage'),
+    layout: () => import('layouts/master.vue'),
+    title: 'icontact.cms.sidebar.adminNotebooks',
+    icon: 'fa-light fa-address-book',
+    subHeader: {
+      refresh: true,
+    },
+  },
+  items: {
+    permission: 'icontact.items.manage',
+    activated: true,
+    authenticated: true,
+    path: '/contact/items/index',
+    name: 'qcontact.admin.items',
+    crud: import('modules/qcontact/_crud/items'),
+    page: () => import('modules/qcrud/_pages/admin/crudPage'),
+    layout: () => import('layouts/master.vue'),
+    title: 'icontact.cms.sidebar.adminItems',
+    icon: 'fa-light fa-list-timeline',
+    subHeader: {
+      refresh: true,
+    },
+  },
+};
