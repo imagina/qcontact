@@ -3,14 +3,10 @@ export default {
     cms: {
       sidebar: {
         adminGroup: 'Contacts',
-        adminNotebooks: 'Contacts',
-        adminItems: 'Items',
+        adminItems: 'Contacts',
       },
-      newNotebook: 'New Notebook',
-      updateNotebook: 'Update Notebook',
-      newItem: 'New Item',
-      updateItem: 'Update Item',
-      isPublic: 'Is Public',
+      newItem: 'New Contact',
+      updateItem: 'Update Contact'
     },
   },
 };
