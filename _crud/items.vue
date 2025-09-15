@@ -58,7 +58,7 @@ export default {
             },
             {
               name: 'countryCode',
-              label: this.$trp('ilocations.cms.form.countryCode'),
+              label: this.$trp('ilocation.cms.form.countryCode'),
               field: 'countryCode',
               align: 'left',
               format: (val) => (val ? `(+${val})` : '-'),
@@ -150,7 +150,7 @@ export default {
             value: null,
             type: 'select',
             props: {
-              label: this.$tr('ilocations.cms.form.countryCode'),
+              label: this.$tr('ilocation.cms.form.countryCode'),
             },
             loadOptions: {
               apiRoute: 'apiRoutes.qlocations.countries',
