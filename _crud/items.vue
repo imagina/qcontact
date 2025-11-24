@@ -156,7 +156,7 @@ export default {
               apiRoute: 'apiRoutes.qlocations.countries',
               requestParams: { include: 'translations' },
               select: {
-                label: item => `${item.name} (+${item.callingCode})`,
+                label: item => `${item.title} (+${item.callingCode})`,
                 id: 'callingCode'
               },
               filterByQuery: true,
